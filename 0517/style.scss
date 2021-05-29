@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+$black:#000;
+$yellow:#e1ce03e0;
+$green:rgba(2, 163, 83, 0.603);
+$orange: #ff6201;
+$red:#9c0606;
+$white:rgba(255, 255, 255, 1);
+$light:#131015;
+
+$font-basic:1rem;
+$font-sm:$font-basic * 0.5;
+$font-xl:$font-basic * 1.5;
+
+// .wrapper{
+//   display:flex;
+// }
+
+.btn {
+  width: auto;
+  background: $black;
+  color: $white;
+  text-decoration: none;
+  display: block;
+  font-size: $font-basic;
+  display: inline-block;
+  text-align: center;
+  border-radius: 30px;
+  margin: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid $black;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-yellow {
+  background: $yellow;
+  color: $black;
+  border: 1px solid $yellow;
+}
+
+.btn-green {
+  background: $green;
+  color: $light;
+  border: 1px solid $green;
+
+}
+
+.btn-orange {
+  background: $orange;
+  color: $white;
+  border: 1px solid $orange;
+}
+
+.btn-red {
+  background: $red;
+  color: $white;
+  border: 1px solid $red;
+}
+
+
+
+.outline {
+  background: transparent;
+  color: $black;
+  border: 1px solid $black;
+
+  &:hover {
+
+    background: $black;
+    color: $white
+  }
+}
+
+.btn-yellow-outline {
+  background: transparent;
+  color: $yellow;
+  border: 1px solid $yellow;
+
+  &:hover {
+    background: $yellow;
+    color: $black;
+    
+  }
+}
+
+
+.btn-green-outline {
+  background: transparent;
+  color: $green;
+  border: 1px solid $green;
+
+  &:hover {
+    background: $green;
+    color: $light;
+  }
+}
+
+.btn-orange-outline {
+  background: transparent;
+  color: $orange;
+  border: 1px solid $orange;
+
+  &:hover {
+    background: $orange;
+    color: $white;
+  }
+}
+
+.btn-red-outline {
+  background: transparent;
+  color: $red;
+  border: 1px solid $red;
+
+  &:hover {
+    background: $red;
+    color: $white;
+  }
+}
+
+
+.btn-sm {
+  font-size: $font-sm;
+  padding: 5px 8px;
+}
+
+.btn-xl {
+  font-size: $font-xl;
+  padding: 12.5px 20px;
+}
